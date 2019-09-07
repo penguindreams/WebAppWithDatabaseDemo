@@ -1,4 +1,7 @@
 trigger: 'none' # will disable CI builds entirely
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
    
 jobs:
 - job: WebApp
